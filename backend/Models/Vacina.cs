@@ -11,4 +11,19 @@ public class Vacina
     public DateTime Validade { get; set;}
     public Guid PostoId { get; set; }
     public Posto Posto { get; set; }
+
+     
+    public bool IsDataValidadeValida()
+    {
+        return Validade > DateTime.Today;
+    }
+
+    public void SetValidade(DateTime validade)
+    {
+        if (validade <= DateTime.Today)
+        {
+            throw new ArgumentException("A data de validade deve ser no futuro.");
+        }
+        Validade = validade;
+    }
 }

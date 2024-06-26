@@ -20,6 +20,10 @@ public class VacinaService : IVacinaService
 
     public async Task CriarVacina(Vacina vacina)
     {
+        if (vacina.Validade <= DateTime.Today)
+        {
+            throw new ArgumentException("A data de validade deve ser no futuro.");
+        }
 
         Posto posto = await _postoServices.ObterPostoPorId(vacina.PostoId);
         

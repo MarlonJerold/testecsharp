@@ -132,3 +132,12 @@
 /home/marlon/Documentos/backend/backend/obj/Debug/net8.0/backend.pdb
 /home/marlon/Documentos/backend/backend/obj/Debug/net8.0/backend.genruntimeconfig.cache
 /home/marlon/Documentos/backend/backend/obj/Debug/net8.0/ref/backend.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/TesteAplicacao.Testes/obj/project.assets.json
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/TesteAplicacao.Testes/obj/TesteAplicacao.Testes.csproj.nuget.dgspec.json
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/Castle.Core.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/Moq.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/xunit.abstractions.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/xunit.assert.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/xunit.core.dll
+/home/marlon/Documentos/backend/backend/bin/Debug/net8.0/xunit.execution.dotnet.dll

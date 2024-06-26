@@ -88,23 +88,23 @@ public class Testes
         // Assert
         Assert.NotNull(resultado);
         Assert.Equal(postoEsperado.Id, resultado.Id);
-        // Adicione mais asserts conforme necessário
+
     }
     [Fact]
     public async Task ObterTodosOsPostos_DeveRetornarListaDePostos()
     {
         // Arrange
         var postoRepositoryMock = new Mock<IPostoRepository>();
-        var postoContextMock = new Mock<PostoContext>(); // Mock do contexto, se necessário
-        var mapperMock = new Mock<IMapper>(); // Mock do AutoMapper, se necessário
+        var postoContextMock = new Mock<PostoContext>();
+        var mapperMock = new Mock<IMapper>();
         
         var postoService = new PostoService(postoRepositoryMock.Object, postoContextMock.Object, mapperMock.Object);
 
         var listaDePostos = new List<Posto>
         {
-            new Posto { Id = Guid.NewGuid(), /* preencher com dados simulados */ },
-            new Posto { Id = Guid.NewGuid(), /* preencher com dados simulados */ },
-            new Posto { Id = Guid.NewGuid(), /* preencher com dados simulados */ }
+            new Posto { Id = Guid.NewGuid(), Name = "Posto3"},
+            new Posto { Id = Guid.NewGuid(), Name = "Posto2" },
+            new Posto { Id = Guid.NewGuid(), Name = "Posto1" }
         };
 
         postoRepositoryMock.Setup(repo => repo.GetPostosAsync())
@@ -139,8 +139,8 @@ public class Testes
     public async Task GetUsuarioPorID_DeveRetornarUsuarioExistente()
     {
         // Arrange
-        var usuarioRepositoryMock = new Mock<IUsuarioRepository>(); // Mock do repositório
-        var usuarioService = new UsuarioService(usuarioRepositoryMock.Object); // Serviço a ser testado
+        var usuarioRepositoryMock = new Mock<IUsuarioRepository>();
+        var usuarioService = new UsuarioService(usuarioRepositoryMock.Object);
 
         var usuarioExistente = new Usuario { Id = Guid.NewGuid(), Nome = "Usuário Teste" };
 

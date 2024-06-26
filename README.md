@@ -69,9 +69,6 @@ Testa a aplicação executando os testes unitários e de integração. Você pod
 8. Depurar a aplicação
 Se necessário, depure a aplicação usando o Visual Studio Code ou outro editor de código. Você pode configurar breakpoints e executar a aplicação em modo de depuração.
 
-Conclusão
-Agora você deve ter executado a aplicação .NET 8 usando o repositório do teste técnico. Lembre-se de que é importante seguir as instruções do teste técnico e seguir as diretrizes de desenvolvimento da aplicação.
-
 Notas
 Se você estiver usando o Visual Studio, você pode abrir o projeto e executá-lo clicando no botão "Start" no menu "Debug".
 Se você estiver usando o Visual Studio Code, você pode abrir o diretório do repositório e executar o comando dotnet run no terminal.

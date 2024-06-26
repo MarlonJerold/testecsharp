@@ -34,8 +34,7 @@
 
 Clona o repositório do teste técnico em um diretório local usando o comando:
 ```bash
-git clone https://github.com/usuario/repositório.git
-Substitua usuario e repositório pelo nome do usuário e do repositório do teste técnico.
+git clone https://github.com/MarlonJerold/testecsharp
 ```
 2. Navegar até o diretório do repositório
 Navegue até o diretório do repositório clonado usando o comando:
